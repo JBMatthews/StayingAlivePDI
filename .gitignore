@@ -1,5 +1,5 @@
-# Secrets
-.env
+# Ignore real credentials
+credentials.sh
 
 # Logs
 pdi_keepalive.log

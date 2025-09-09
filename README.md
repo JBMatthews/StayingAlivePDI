@@ -1,41 +1,51 @@
-# ServiceNow Stayin' Alive PDI 
+# ServiceNow PDI Keep Alive
 
-A simple shell script + cron setup to prevent your **ServiceNow Personal Developer Instance (PDI)** from expiring due to inactivity.  
-By default, ServiceNow reclaims PDIs after ~10 days of no activity. This script uses a harmless REST API call to "ping" your instance automatically, so you never have to worry about it disappearing.
-
----
-
-## How It Works
-- Uses `curl` with **Basic Auth** to hit a lightweight ServiceNow API endpoint (`sys_properties`).
-- The request counts as user activity.
-- When scheduled with `cron`, the script runs on your Mac at regular intervals to keep the instance alive.
+Tiny Bash script to keep your ServiceNow **Personal Developer Instance (PDI)** from expiring.  
+It works by hitting a lightweight REST API endpoint on a schedule.
 
 ---
 
-## Prerequisites
-- macOS or Linux with:
-  - `bash` (preinstalled)
-  - `curl` (preinstalled)
-- A valid ServiceNow PDI URL, username, and password  
-  (tip: create a dedicated "keepalive" user in your PDI if you prefer not to use `admin`).
+## Files
+- `keep_pdi_alive.sh` → Main script
+- `credentials.sh` → Stores your ServiceNow URL, username, and password
+- `README.md` → Instructions
 
 ---
 
 ## Setup
 
-### 1. Save the Script
-Create a file called `keep_pdi_alive.sh` in your home directory:
+1. Copy `credentials.sh.example` to `credentials.sh` and update with your real info:
+   ```bash
+   #!/bin/bash
+   SNow_URL="https://devXXXXX.service-now.com"
+   SNow_USER="admin"
+   SNow_PASS="your_password"
+   ```
 
-```bash
-#!/bin/bash
-# ---- CONFIG ----
-SNow_URL="https://devXXXXX.service-now.com"
-SNow_USER="admin"
-SNow_PASS="your_password"
-# ---------------
+2. Make scripts executable:
+   ```bash
+   chmod +x keep_pdi_alive.sh
+   chmod 600 credentials.sh   # protect credentials
+   ```
 
-curl -sS -u "${SNow_USER}:${SNow_PASS}" \
-  "${SNow_URL}/api/now/table/sys_properties?sysparm_limit=1" \
-  -H "Accept: application/json" > /dev/null
+3. Run manually:
+   ```bash
+   ./keep_pdi_alive.sh
+   ```
 
-echo "$(date) - Keep-alive ping sent to $SNow_URL"
+4. Automate with cron (example: run every day at 9am):
+   ```bash
+   crontab -e
+   ```
+   Add:
+   ```
+   0 9 * * * /bin/bash /absolute/path/to/keep_pdi_alive.sh >> /absolute/path/to/pdi_keepalive.log 2>&1
+   ```
+
+---
+
+## Security
+- **Never commit real `credentials.sh`**. Only commit the template `credentials.sh.example`.
+- Add `credentials.sh` to `.gitignore`.
+
+---
