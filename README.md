@@ -1,4 +1,4 @@
-<img width="578" height="130" alt="Screenshot 2025-09-09 at 9 42 05 AM" src="https://github.com/user-attachments/assets/eca07d82-7795-4edf-9d6d-c5db607d6918" />
+![ServiceNow PDI Stayin' Alive](./stayin_alive_pdi.png)
 
 Tiny Bash script to keep your ServiceNow **Personal Developer Instance (PDI)** from expiring.  
 It works by hitting a lightweight REST API endpoint on a schedule.
