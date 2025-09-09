@@ -1,4 +1,4 @@
-# ServiceNow PDI Keep-Alive
+# ServiceNow Staying Alive PDI 
 
 A simple shell script + cron setup to prevent your **ServiceNow Personal Developer Instance (PDI)** from expiring due to inactivity.  
 By default, ServiceNow reclaims PDIs after ~10 days of no activity. This script uses a harmless REST API call to "ping" your instance automatically, so you never have to worry about it disappearing.
