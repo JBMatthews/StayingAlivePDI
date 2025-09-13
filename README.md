@@ -1,6 +1,6 @@
 ![ServiceNow PDI Stayin' Alive](./staying_alive_banner.png)
 
-Tiny Bash script to keep your ServiceNow **Personal Developer Instance (PDI)** "Stayin' Alive" like the BeeGees.  
+Tiny Bash script to keep your ServiceNow **Personal Developer Instance (PDI)** "Stayin' Alive" like the John Travolta.  
 It works by hitting a lightweight REST API endpoint on a schedule.
 
 ---
