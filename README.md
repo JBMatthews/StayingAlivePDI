@@ -53,6 +53,6 @@ It works by hitting a lightweight REST API endpoint on a schedule.
 
 ## Personal Note
 - **Don't be `that guy`**. I created this because after a very tough breakup I lost my PDI and all my work. That shouldn't happen. But please, don't misuse this. 
-- **Dear ServiceNow**, I'm not only single but currently unemployed... send application along with cease and desist letter. 
+- **Dear ServiceNow**, I'm not only single but currently unemployed... please consider sending application along with cease and desist letter. 
 
 ---
