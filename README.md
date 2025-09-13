@@ -1,4 +1,4 @@
-![ServiceNow PDI Stayin' Alive](./stayin_alive_pdi.png)
+![ServiceNow PDI Stayin' Alive](./staying_alive_banner.png)
 
 Tiny Bash script to keep your ServiceNow **Personal Developer Instance (PDI)** from expiring.  
 It works by hitting a lightweight REST API endpoint on a schedule.
@@ -48,5 +48,11 @@ It works by hitting a lightweight REST API endpoint on a schedule.
 ## Security
 - **Never commit real `credentials.sh`**. Only commit the template `credentials.sh.example`.
 - Add `credentials.sh` to `.gitignore`.
+
+---
+
+## Personal Note
+- **Don't be `that guy`**. I created this because after a very tough breakup I lost my PDI and all my work. That shouldn't happen. But please, don't misuse this. 
+- **Dear ServiceNow**, I'm not only single but currently unemployed... please consider sending application along with cease and desist letter. 
 
 ---
