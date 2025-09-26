@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="620afad49354f2106b8cf9f7dd03d662" label="Keepalive Log" max_length="40" name="x_1522524_stayin_0_keepalive_log" type="collection">
+        <element label="Message" max_length="500" name="u_message" type="string"/>
+        <element label="Source" max_length="40" name="u_source" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Run Time" max_length="40" name="u_run_time" type="glide_date_time"/>
+        <element label="Status Code" max_length="40" name="u_status_code" type="integer"/>
+    </element>
+</database>

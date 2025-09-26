@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="DELETE">
+        <active>true</active>
+        <base_uri>/api/x_1522524_stayin_0/test</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>Test</name>
+        <namespace>x_1522524_stayin_0</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>test</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-26 11:39:12</sys_created_on>
+        <sys_id>dd8cf6d89354f2106b8cf9f7dd03d6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Staying Alive PDI" source="x_1522524_stayin_0">5419b6949354f2106b8cf9f7dd03d698</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Staying Alive PDI">5419b6949354f2106b8cf9f7dd03d698</sys_scope>
+        <sys_update_name>sys_ws_definition_dd8cf6d89354f2106b8cf9f7dd03d6cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-26 11:39:12</sys_updated_on>
+    </sys_ws_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Staying Alive PDI">5419b6949354f2106b8cf9f7dd03d698</application>
+        <file_path/>
+        <instance_id>1eb1762c3b1be6d49aefe747f4e45ab0</instance_id>
+        <instance_name>dev355296</instance_name>
+        <name>sys_ws_definition_dd8cf6d89354f2106b8cf9f7dd03d6cc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/x_1522524_stayin_0/test</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>Test</name><namespace>x_1522524_stayin_0</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>test</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-26 11:39:12</sys_created_on><sys_id>dd8cf6d89354f2106b8cf9f7dd03d6cc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Test</sys_name><sys_package display_value="Staying Alive PDI" source="x_1522524_stayin_0">5419b6949354f2106b8cf9f7dd03d698</sys_package><sys_policy/><sys_scope display_value="Staying Alive PDI">5419b6949354f2106b8cf9f7dd03d698</sys_scope><sys_update_name>sys_ws_definition_dd8cf6d89354f2106b8cf9f7dd03d6cc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-26 11:39:12</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+        <payload_hash>374901548</payload_hash>
+        <record_name>Test</record_name>
+        <reverted_from/>
+        <source>5419b6949354f2106b8cf9f7dd03d69a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-26 11:39:12</sys_created_on>
+        <sys_id>1c9c36989354f2106b8cf9f7dd03d6f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19985d1efa80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-26 11:39:12</sys_updated_on>
+        <type>Scripted REST API</type>
+        <update_guid>909c36982c54f210e91b60a8b7a1fbf6</update_guid>
+        <update_guid_history>909c36982c54f210e91b60a8b7a1fbf6:374901548</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-26 11:39:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_definition">sys_ws_definition</sys_db_object>
+        <sys_id>77f332e0121d4efbbc14f68fb6468fe1</sys_id>
+        <sys_metadata>dd8cf6d89354f2106b8cf9f7dd03d6cc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Staying Alive PDI" source="x_1522524_stayin_0">5419b6949354f2106b8cf9f7dd03d698</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Staying Alive PDI">5419b6949354f2106b8cf9f7dd03d698</sys_scope>
+        <sys_scope_delete display_value="">0993e2b6d4594df1814501f32ef1b949</sys_scope_delete>
+        <sys_update_name>sys_ws_definition_dd8cf6d89354f2106b8cf9f7dd03d6cc</sys_update_name>
+        <sys_update_version display_value="sys_ws_definition_dd8cf6d89354f2106b8cf9f7dd03d6cc">1c9c36989354f2106b8cf9f7dd03d6f6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-26 11:39:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
