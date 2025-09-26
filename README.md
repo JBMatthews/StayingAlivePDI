@@ -33,7 +33,7 @@ If you haven’t done this before:
 5. Scopes: check only **repo** (full control of private repositories) if your fork is private. For public forks, minimal scopes are fine.  
 6. Generate and copy the token.  
 
-    > Save this token — you’ll need it in the next step.  
+> Save this token — you’ll need it in the next step.  
 
 ---
 
@@ -42,8 +42,8 @@ If you haven’t done this before:
 1. Log into [developer.servicenow.com](https://developer.servicenow.com) and open your PDI.  
 2. In the left nav, go to **Connections & Credentials → Credentials** (table: `discovery_credentials`).  
 3. Click **New** → select **Basic Auth Credentials**.  
-   - **Name**: `GitHubAccessControl`  
-   - **Username**: your GitHub username you use to log into GitHub.  
+   - **Name**: `GitHub`  
+   - **Username**: your GitHub username  
    - **Password**: the GitHub PAT you created in Step 2  
    - Save the record.  
 4. Now go to **System Applications → Studio**.  
@@ -114,8 +114,6 @@ Add:
 ```cron
 0 9 * * * cd /Users/YOURNAME/Path/StayinAlivePDI && ./keep_pdi_alive.sh >> pdi_keepalive.log 2>&1
 ```
-    
-    > If you are unsure of what the absolute path to "StayinAlivePDI" is and you are using Terminal, you can use the command 'pwd'
 
 - Runs every day at 9am.  
 - Appends results to `pdi_keepalive.log` in your repo folder.  
@@ -124,6 +122,32 @@ Check logs:
 ```bash
 tail -f pdi_keepalive.log
 ```
+
+---
+
+### macOS Users: Granting Cron Full Disk Access
+On macOS, `cron` is sandboxed by default. Without extra permissions you may see:  
+```
+Operation not permitted
+```
+
+To fix this:
+
+1. Open **System Settings → Privacy & Security → Full Disk Access**.  
+2. Unlock with your password if needed.  
+3. Click **+** → `⌘ + Shift + G` → enter:  
+   ```
+   /usr/sbin/cron
+   ```  
+   Select and **Open**.  
+4. Toggle **cron** ON in the list.  
+5. Restart cron or reboot:  
+   ```bash
+   sudo launchctl stop com.vix.cron
+   sudo launchctl start com.vix.cron
+   ```
+
+Now cron can run scripts in your home folders like `Documents/`.
 
 ---
 
@@ -165,13 +189,13 @@ tail -f pdi_keepalive.log
 - Run `keep_pdi_alive.sh` daily via cron.  
 - Confirm logs locally and in your PDI.  
 
-Stayin’ Alive — your PDI heartbeat that never skips a beat. 
-
+Stayin’ Alive — your PDI heartbeat that never skips a beat. 🕺
 
 ---
 
 ## Personal Note
-- **Don't be that guy**. After a tough breakup, I lost my PDI. That shouldn't happen. But, please, don't misuse this. 
+- **Don't be that guy**. After a tough breakup, I lost my PDI. That shouldn't happen. But, please, don't misuse this.
+- **Be that guy**. This project was designed primary for Mac users, because that's what real developers use. Sorry! I had to. The point being, if you have input as a Windows/Linux user, please notify me so that I can note that in the README and this project can be seemlessly used by all. 
 - **Dear ServiceNow**, I'm not only single but currently unemployed... please consider sending application along with cease and desist letter. 
 
 ---
