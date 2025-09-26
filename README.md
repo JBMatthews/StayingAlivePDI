@@ -33,7 +33,7 @@ If you haven’t done this before:
 5. Scopes: check only **repo** (full control of private repositories) if your fork is private. For public forks, minimal scopes are fine.  
 6. Generate and copy the token.  
 
-> Save this token — you’ll need it in the next step.  
+   > Save this token — you’ll need it in the next step.  
 
 ---
 
@@ -146,6 +146,7 @@ To fix this:
    sudo launchctl stop com.vix.cron
    sudo launchctl start com.vix.cron
    ```
+   > If this doesn't work, you will need to restart your computer.
 
 Now cron can run scripts in your home folders like `Documents/`.
 
