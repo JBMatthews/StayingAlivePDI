@@ -195,7 +195,7 @@ Stayin’ Alive — your PDI heartbeat that never skips a beat. 🕺
 ---
 
 ## Personal Note
-- **Don't be that guy**. After a tough breakup, I lost my PDI. That shouldn't happen. But, please, don't misuse this.
+- **Don't be that guy**. After a tough breakup, I lost my PDI. That shouldn't happen. But, please, don't misuse this. Kindly only reserve 1 PDI for personal use as ServiceNow requests.
 - **Be that guy**. This project was designed primary for Mac users, because that's what real developers use. Sorry! I had to. The point being, if you have input as a Windows/Linux user, please notify me so that I can note that in the README and this project can be seemlessly used by all. 
 - **Dear ServiceNow**, I'm not only single but currently unemployed... please consider sending application along with cease and desist letter. 
 
